@@ -24,7 +24,6 @@ Program consists of 2 services:
 * cd to project directory and run:
 ```
 docker-compose up
-
 ```
 or
 ```
