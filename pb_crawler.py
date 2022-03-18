@@ -54,7 +54,7 @@ def get_paste_data(uid):
     except Exception as e:
         logging.error(f'Failed to parse paste from {BASEURL}{uid}, error: {str(e)}')
         return None
-    return Paste( uid=uid, author=author if author not in UNKNOWN_AUTHORS else '',
+    return Paste(uid=uid, author=author if author not in UNKNOWN_AUTHORS else '',
                  title=title if title not in UNTITLED else '',
                  timestamp=parse(timestamp, tzinfos={"CDT": "UTC-5"}), content=content)
 
