@@ -1,0 +1,4 @@
+lxml
+pymongo
+python-dateutil
+requests
