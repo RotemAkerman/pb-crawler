@@ -5,6 +5,7 @@ Simple pastebin crawler.
 ## Description
 
 This program crawls pastebin.com and stores the most recent "pastes" in a structured data model in MongoDB.
+
 Program consists of 2 services:
 * mongodb
     * latest mongo image with default settings, exposing port 27017
