@@ -47,7 +47,7 @@ def get_recent_pastes():
 def get_paste_data(uid):
     tree = get_page_tree(f'{BASEURL}{uid}')
     try:
-        title = tree.xpath('/html/body/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/div[1]/h1')[0].text # FAILES, check?
+        title = tree.xpath('/html/body/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/div[1]/h1')[0].text
         author = tree.xpath('/html/body/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/div[2]/div[1]/a')[0].text
         timestamp = tree.xpath('/html/body/div[1]/div[2]/div[1]/div[3]/div[1]/div[3]/div[2]/div[2]/span')[0].attrib['title']
         content = str(tree.xpath('/html/body/div[1]/div[2]/div[1]/div[3]/textarea/text()')[0]).strip()
